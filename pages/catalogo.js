@@ -49,7 +49,9 @@ function Catalogo({ products, productCount, categories }) {
 
   // Carga mas productos
   const getMoreProducts = async () => {
-    const response = await fetch(`${process.env.API_URL}/api/v1/product/products?skip=${productsFetch.length}&take=12`)
+    const response = await fetch(
+      `${process.env.NEXT_PUBLIC_API_URL}/api/v1/product/products?skip=${productsFetch.length}&take=12`
+    )
     const { data } = await response.json()
 
     setProductsFetch((productsFetch) => [...productsFetch, ...data])
