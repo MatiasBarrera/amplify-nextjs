@@ -4,7 +4,7 @@
   "scripts": {
     "dev": "dotenv -e .env.development next dev",
     "build": "next build",
-    "start": "cross-env NODE_ENV=production next start",
+    "start": "next start",
     "lint": "next lint",
     "test:cy": "dotenv -e .env.test next | cypress open",
     "pm:dev": "dotenv -e .env.development prisma migrate dev --name"
