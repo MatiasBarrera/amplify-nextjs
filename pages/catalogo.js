@@ -70,6 +70,7 @@ function Catalogo({ products, productCount, categories }) {
           name="description"
           content="Encuentra proveedores para tu tienda de alimentos fácilmente y respaldados por ComeS, la plataforma de alimentación sustentable de Chile."
         />
+        <meta httpEquiv="Content-Security-Policy" content="upgrade-insecure-requests" />
         <meta name="keywords" content="alimentos saludables, nuevos alimentos, sustentable" />
       </Head>
       <main>
