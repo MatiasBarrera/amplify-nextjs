@@ -19,8 +19,7 @@ export const getServerSideProps = async () => {
   const { data: products, productCount } = await resProducts.json()
 
   const resCategories = await fetch(`${process.env.API_URL}/api/v1/category/categories`)
-  const { data } = await resCategories.json()
-  const { categories } = data
+  const { categories } = await resCategories.json()
 
   return { props: { products, productCount, categories } }
 }
@@ -49,9 +48,13 @@ function Catalogo({ products, productCount, categories }) {
 
   // Carga mas productos
   const getMoreProducts = async () => {
-    const response = await fetch(
-      `${process.env.NEXT_PUBLIC_API_URL}/api/v1/product/products?skip=${productsFetch.length}&take=12`
-    )
+    console.log(process.env.NEXT_PUBLIC_API_URL)
+    // const response = await fetch(
+    //   `http://${process.env.NEXT_PUBLIC_API_URL}/api/v1/product/products?skip=${productsFetch.length}&take=12`
+    // )
+    // const { data } = await response.json()
+
+    const response = await fetch(`api/product/products?skip=${productsFetch.length}&take=12`)
     const { data } = await response.json()
 
     setProductsFetch((productsFetch) => [...productsFetch, ...data])
