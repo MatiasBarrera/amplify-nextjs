@@ -48,7 +48,6 @@ function Catalogo({ products, productCount, categories }) {
 
   // Carga mas productos
   const getMoreProducts = async () => {
-    console.log(process.env.NEXT_PUBLIC_API_URL)
     // const response = await fetch(
     //   `http://${process.env.NEXT_PUBLIC_API_URL}/api/v1/product/products?skip=${productsFetch.length}&take=12`
     // )
