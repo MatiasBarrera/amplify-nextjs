@@ -6,7 +6,6 @@ module.exports = {
   env: {
     NEXT_PUBLIC_IMAGES_PATH: process.env.NEXT_PUBLIC_IMAGES_PATH,
     API_URL: process.env.API_URL,
-    NEXT_PUBLIC_API_URL: process.env.NEXT_PUBLIC_API_URL,
     NEXT_PUBLIC_WHATSAPP_NUMBER: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER,
   },
   webpack: (config, { defaultLoaders, isServer }) => {
