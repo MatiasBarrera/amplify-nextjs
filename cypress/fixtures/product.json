@@ -1,0 +1,44 @@
+{
+  "data": {
+    "product": {
+      "ID_product": "1",
+      "name": "Kombucha té blanco lavanda beterraga 330 cc",
+      "slug": "kombucha-te-blanco-lavanda-beterraga-330-cc",
+      "wholesale_unit_price": 1488,
+      "sale_format": 24,
+      "description": "El antiguo elixir de Oriente, asi le llaman a la Kombucha, una bebida saludable con propiedades beneficiosas para tu vida.",
+      "duration": 12,
+      "suggested_sale_price": 1990,
+      "price_package": 35700,
+      "benefit": "Mejora la Flora intestinal",
+      "conservation": "lugar fresco y seco",
+      "stock_quantity": 1,
+      "offer_price": null,
+      "delivery_time": 10,
+      "modification_date": null,
+      "weight": 14680,
+      "image": [
+        {
+          "ID_image": "1",
+          "name_image": "Kombucha Violeta",
+          "file_image": "MKVioleta.jpg",
+          "isMain": true,
+          "alt": "kombucha lavanda"
+        }
+      ],
+      "producer": {
+        "ID_producer": "1",
+        "brand_name": "Moksha Kombucha",
+        "min_producer_purchase": 1,
+        "type_sale": {
+          "ID_type_sale": "4",
+          "type": "cajas"
+        }
+      },
+      "stock": {
+        "ID_stock": "1",
+        "status": "En stock"
+      }
+    }
+  }
+}

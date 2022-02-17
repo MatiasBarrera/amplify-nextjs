@@ -1,0 +1,30 @@
+{
+  "name": "clon_cs_store",
+  "private": true,
+  "scripts": {
+    "dev": "dotenv -e .env.development next dev",
+    "build": "dotenv -e .env.development next build",
+    "start": "dotenv -e .env.development next start",
+    "lint": "next lint",
+    "test:cy": "dotenv -e .env.test next | cypress open"
+  },
+  "dependencies": {
+    "@material-ui/core": "4.12.3",
+    "dotenv-cli": "4.1.1",
+    "next": "12.0.8",
+    "next-redux-wrapper": "7.0.5",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-infinite-scroll-component": "6.1.0",
+    "react-redux": "7.2.6",
+    "redux": "4.1.2",
+    "redux-devtools-extension": "2.13.9",
+    "redux-thunk": "2.4.1"
+  },
+  "devDependencies": {
+    "cypress": "9.3.1",
+    "eslint": "8.6.0",
+    "eslint-config-next": "12.0.8",
+    "prettier": "2.5.1"
+  }
+}
