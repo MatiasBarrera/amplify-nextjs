@@ -1,5 +1,5 @@
 {
-  "name": "clon_cs_store",
+  "name": "cs_store",
   "private": true,
   "scripts": {
     "dev": "dotenv -e .env.development next dev",
